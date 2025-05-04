@@ -97,57 +97,72 @@ main {
 .modal-contenido {
     display: none;
     background-color: white;
-    padding: 30px;
+    padding: 40px; /* Aumenté el padding */
     border-radius: 15px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.3);
     width: 90%;
-    max-width: 500px;
+    max-width: 700px; /* Aumenté el ancho máximo */
+    min-height: 200px; /* Añadí altura mínima */
     text-align: center;
     z-index: 1001;
     border: 1px solid #ccc;
     flex-shrink: 0;
+    overflow-y: auto; /* Para contenido largo */
+    max-height: 90vh; /* Limita la altura máxima */
 }
 
 .modal-contenido h1 {
     font-family: 'Press Start 2P', sans-serif;
-    font-size: 1.3rem;
-    margin-bottom: 25px;
+    font-size: 1.8rem; /* Título más grande */
+    margin-bottom: 30px;
     color: #333;
 }
 
-.modal-contenido section {
-    margin-top: 20px;
-}
+
 
 .modal-contenido input[type="number"],
 .modal-contenido input[type="text"] {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     border-radius: 8px;
     border: 1px solid #ced4da;
-    padding: 10px;
+    padding: 12px; /* Inputs más grandes */
     width: 100%;
+    height: 7vh;
     box-sizing: border-box;
-}
-
-.modal-contenido input[type="number"]:focus,
-.modal-contenido input[type="text"]:focus {
-    border-color: #80bdff;
-    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
-    outline: none;
+    font-size: 1rem; /* Texto más grande en inputs */
 }
 
 .modal-contenido label {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
     font-weight: bold;
     color: #555;
     text-align: left;
+    font-size: 1.1rem; /* Etiquetas más grandes */
 }
 
 .modal-contenido p {
-    font-size: 1.1rem;
+    font-size: 1.2rem; /* Párrafos más grandes */
     color: #333;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+#Saldo-disponible {
+    font-weight: bold;
+    font-size: 1.5rem; /* Saldo más grande */
+    color: #007bff;
+}
+
+.modal-contenido button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 25px; /* Botones más grandes */
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 15px 10px; /* Más margen */
+    font-size: 1.1rem; /* Texto de botones más grande */
 }
 
 #Saldo-disponible {
@@ -156,17 +171,7 @@ main {
     color: #007bff;
 }
 
-.modal-contenido button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin: 10px 5px;
-    font-size: 0.9rem;
-}
+
 
 .modal-contenido button:hover {
     background-color: #0056b3;

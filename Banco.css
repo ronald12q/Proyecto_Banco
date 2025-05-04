@@ -63,6 +63,33 @@ como valor preterminado */
     box-shadow: 0 4px 8px rgba(0,0,0,0.2) !important;
     color: #111111 !important;
 }
+.boton-delete {
+    border-radius: 15px !important;
+    cursor: pointer;
+    width: 100px;
+    height: 70px;
+    margin: 5px !important;
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    border: none !important;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2) !important;
+    color: #111111 !important;
+}
+.boton-entrar {
+    border-radius: 15px !important;
+    cursor: pointer;
+    width: 100px;
+    height: 70px;
+    margin: 5px !important;
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    border: none !important;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2) !important;
+    color: #111111 !important;
+    
+}
 
 .btn-primary {
     background-color: #eeeded !important;
@@ -73,12 +100,22 @@ como valor preterminado */
     transform: scale(1.05);
 }
 
-.btn-secondary {
-    background-color: #cc0000 !important;
+.btn-secondary:first-child {
+    background-color: #00cc2c !important;
+}
+.btn-secondary:nth-child(2) {
+    background-color: #e60000!important;
 }
 
-.btn-secondary:hover {
-    background-color: #e60000 !important;
+.btn-secondary:first-child:hover {
+    background-color: #2c853f  !important;
     transform: scale(1.05);
 }
+.btn-secondary:nth-child(2):hover {
+    background-color: #941b1b  !important;
+    transform: scale(1.05);
+}
+
+
+
 
